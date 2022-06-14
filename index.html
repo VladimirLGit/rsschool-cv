@@ -1,14 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>HTML, CSS &amp; Git Basics.</title>
+  <title>cv</title>
+  <link rel="icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <header class="header">
+    <div class="container navigMenu">
+      <nav class="nav">
+        <ul class="menuList">
+          <li class="itemMenu"><a href="#Contacts" class="itemLink">Contacts</a> </li>
+          <li class="itemMenu"><a href="#Summary" class="itemLink">Summary</a></li>
+          <li class="itemMenu"><a href="#Skills" class="itemLink">Skills</a></li>
+          <li class="itemMenu"><a href="#Code" class="itemLink">Code</a></li>
+          <li class="itemMenu"><a href="#Projects" class="itemLink">Projects</a></li>
+          <li class="itemMenu"><a href="#Education" class="itemLink">Education</a></li>
+          <li class="itemMenu"><a href="#Languages" class="itemLink">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h1>This is a heading</h1>
-  <p>HTML, CSS &amp; Git Basics.</p>
-
+  <main class="main">
+    <div class="container mainContainer">
+      <section class="sectionProfile" id="idProfile">
+        <h1 class="section-title main-title">Vladimir Lobanok</h1>
+        <img src="assets/img/avatar.jpg" alt="Avatar">
+        <h3 class="section-subtitle">Junior Front-End Developer</h3>
+      </section>
+      <section class="section" id="Contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-item contacts-item">
+            <a href="https://yandex.by/maps/157/minsk/?ll=27.561481%2C53.902496&z=12" target="_blank">Minsk</a>
+          </li>
+          <li class="section-item contacts-item">
+            Email: <a href="mailto:1077Control@gmail.com" title="email" target="_blank">1077Control@gmail.com</a>
+          </li>
+          <li class="section-item contacts-item">
+            Github: <a href="https://github.com/VladimirLGit" title="github" target="_blank">VladimirLGit</a>
+          </li>
+          <li class="section-item contacts-item">
+            Telegram: <a href="https://t.me/Vladimir_Lobanok" title="github" target="_blank">@VladimirL</a>
+          </li>
+          <li class="section-item contacts-item">
+            Discord: <a href="https://discord.gg/zUr7wWYPXE" title="github" target="_blank">Vladimir L#9027</a>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Summary">
+        <h2 class="section-title">Summary</h2>
+        <p>My main job is related to programming.
+          I want to develop in Web development.
+          My main goal - clean code. Good understanding of the layout of sites.</p>
+      </section>
+      <section class="section" id="Skills">
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            Web-development:<span> HTML5, CSS3, JavaScript Basics, SQL/MySQL</span>
+          </li>
+          <li class="section-item">
+            Development framework:<span> VS Code, IntelliJ IDEA</span>
+          </li>
+          <li class="section-item">
+            Version control:<span> GIT, Github, SVN</span>
+          </li>
+          <li class="section-item">
+            Graphics:<span> Photoshop</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Code">
+        <h2 class="section-title">Code</h2>
+        <pre class="pre">
+        <code>
+  public static int linearSearch(int arr[], int elementToSearch)
+  {      
+    for (int index = 0; index &lt; arr.length; index++) {
+        if (arr[index] == elementToSearch)
+            return index;
+    }
+    return -1;
+  } 
+        </code>
+      </pre>
+      </section>
+      <section class="section" id="Courses">
+        <h2 class="section-title">Courses</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            Java:<span> SE and EE</span>
+          </li>
+          <li class="section-item">
+            RS School:<span> <a href="https://app.rs.school">«JavaScript/Front-end. Stage 0» (in progress)</a></span>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Projects">
+        <h2 class="section-title">Projects</h2>
+        <ul class="section-list">
+          <li class="section-item github-project">
+            Java:<span> <a href="https://github.com/VladimirLGit" title="github"
+                target="_blank">Project_Hotel</a></span>
+          </li>
+          <li class="section-item github-project">
+            RS School:<span> <a href="https://github.com/VladimirLGit" title="github"
+                target="_blank">GitHub_repository</a></span>
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="Education">
+        <h2 class="section-title">Education</h2>
+        <p>
+          University: Belarusian National Technical University
+        </p>
+      </section>
+      <section class="section section-languages" id="Languages">
+        <h2 class="section-title">Languages</h2>
+        <p>
+          English - Just starting to learn the language (A1).
+        </p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>© 2022 <a href="https://github.com/VladimirLGit" class="github nav-link" target="_blank">GitHub
+          VladimirLGit</a></div>
+      <a href="https://rs.school/js/" class="rss"></a>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
 </body>
+
 </html>
